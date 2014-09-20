@@ -11,4 +11,12 @@ router.get('/test', function (req,res) {
 	res.status(200).end();
 });
 
+router.get('/login', function (req,res){
+
+});
+
+router.post('/login', function (req,res){
+
+});
+
 module.exports = router;
