@@ -9,7 +9,7 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.use(methodOverride());
 app.use(session({ resave: true,
                   saveUninitialized: true,
@@ -18,13 +18,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 var timeAndIP = require('./routes/timeAndIP');
 app.use(timeAndIP);
+app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname, 'public')));
 
-var routes = require('./routes/login');
+var login = require('./routes/login');
 var createClusterGroup = require('./routes/createClusterGroup');
 var createClusterJob = require('./routes/createClusterJob');
 var nodeResponses = require('./routes/nodeResponses');
-app.use(routes);
+app.use(login);
 app.use(createClusterGroup);
 app.use(createClusterJob);
 app.use(nodeResponses);

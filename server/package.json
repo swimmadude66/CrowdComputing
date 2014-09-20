@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "body-parser": "^1.8.2",
+    "ejs": "^1.0.0",
     "errorhandler": "^1.2.0",
     "express": "latest",
     "express-session": "^1.8.2",
     "method-override": "^2.2.0",
-    "mysql": "latest"
+    "mysql": "latest",
+    "squel": "^3.8.1"
   }
 }
