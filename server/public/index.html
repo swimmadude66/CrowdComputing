@@ -1,7 +1,29 @@
-<!DOCTYPE html>
-<head>
-	<title>CrowdComputing</title>
-</head>
-<body>
-	<h1>This is the CrowdComputing Home Page!</h1>
-</body>
+<html>
+    <head>
+        <title>Welcome to CrowdComputing!</title>
+        <link rel="icon" type="image/png" href="crowdComputingIcon.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header">
+            <img class="headerImg" src="crowdComputingSVG.png">
+            <p class="pageTitle">CrowdComputing</p>
+        </div>
+        <form class="signin_login">
+            <input class="inputField" type="email" name="email" placeholder="Username" required>
+            <input class="inputField" type="password" name="email" placeholder="Password" required>
+            <input class="submitButton submitButtonLeft" 
+                   type="submit" 
+                   name="sign-up" 
+                   value="Sign-up"
+                   formmethod="post"
+                   formaction="register" >
+            <input class="submitButton submitButtonRight"
+                   type="submit" 
+                   name="login" 
+                   value="Log in" 
+                   formmethod="post"
+                   formaction="login" >
+        </form>
+    </body>
+</html>

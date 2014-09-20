@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(#000000,#3b3b3b);
+    margin: 0;
+    height: 100%;
+}
+    
+.header {
+    height : 70px;
+    width : 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #585858;
+}
+
+.headerImg {
+    height : 64px;
+    width : 64px;
+    margin : 3px 3px;
+}
+
+.pageTitle {
+    position: absolute;
+    width: 80%;
+    color: #e6e6e6;  
+    top: 5px;
+    left: 90px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.signin_login {
+    width : 50%;
+    margin : 10% 25% 0px;
+    align-content: center;
+}
+
+.inputField {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border : none;
+    font-size: 30px;
+}
+
+.submitButtonLeft {
+    margin-left: 1%;
+    float : left;
+}
+
+.submitButtonRight {
+    margin-right: 1%;
+    float : right;
+
+}
+
+.submitButton {
+    width : 45%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    
+}
