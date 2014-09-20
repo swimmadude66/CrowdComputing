@@ -7,8 +7,6 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var timeAndIP = require('./routes/timeAndIP');
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -18,10 +16,11 @@ app.use(session({ resave: true,
                   secret: 'uwotm8' }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+var timeAndIP = require('./routes/timeAndIP');
 app.use(timeAndIP);
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-var routes = require('./routes/routes');
+var routes = require('./routes/login');
 app.use(routes);
 
 
