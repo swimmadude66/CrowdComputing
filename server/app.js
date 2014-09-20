@@ -21,7 +21,13 @@ app.use(timeAndIP);
 app.use(express.static(path.join(__dirname, 'public')));
 
 var routes = require('./routes/login');
+var createClusterGroup= require('./routes/createClusterGroup');
+var createClusterJob= require('./routes/createClusterJob');
+var nodeResponses= require('./routes/nodeResponses');
 app.use(routes);
+app.use(createClusterGroup);
+app.use(createClusterJob);
+app.use(nodeResponses);
 
 
 
