@@ -17,8 +17,6 @@ router.use(function (req, res, next) {
 
 	console.log(timeAndIPString);
 
-	console.log(req.method);
-
 	fs.appendFile('timeLog.txt', timeAndIPString , function (err) {
 		if (err) {
 			throw err;
