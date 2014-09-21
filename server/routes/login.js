@@ -33,7 +33,7 @@ router.post('/login', function (req,res){
 
 	var userDAO = new UserDAO('localhost', 3306);
 
-	userDAO.loginUser(b.userName,b.thePassword, function(err, status){
+	userDAO.loginUser(b.userName,b.thePassword, function(err){
 		if(err){
 			console.log('Could not find the user in DB');
 			res.send(err);
@@ -77,10 +77,11 @@ router.post('/addNode', function (req,res){
 	};
 	
 	var userDAO = new UserDAO('localhost', 3306);
-	userDAO.loginUser(b.userName,b.thePassword, function(err, status){
+	userDAO.loginUser(b.userName,b.thePassword, function(err){
                 if(err){
                         console.log('Could not find the user in DB');
 			return res.send(err);
+			return;
                 }
   		else{
 			console.log("User validated, Adding node...");

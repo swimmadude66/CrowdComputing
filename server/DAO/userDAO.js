@@ -77,7 +77,7 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
 
             console.log(sql);
 
-            connection.query(sql, function(err, results){
+            connection.query(sql, function(err){
                 connection.release();
                 console.log(results);
                 if(err || results.length===0 ){
@@ -86,7 +86,7 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
                     callback(err);
                 } else {
                     console.log("Found: " + userName + ' - ' + thePassword);
-                   callback(null, "success");
+                   callback(null);
                 }
             });
         }
