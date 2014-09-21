@@ -3,20 +3,21 @@
         <title>Welcome to CrowdComputing!</title>
         <link rel="icon" type="image/png" href="crowdComputingIcon.png">
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <div class="header">
             <img class="headerImg" src="crowdComputingSVG.png">
             <p class="pageTitle">CrowdComputing</p>
         </div>
-        <form class="signin_login">
-            <input class="inputField" type="email" name="email" placeholder="Username" required>
-            <input class="inputField" type="password" name="email" placeholder="Password" required>
+        <form id="signin_loginForm" class="signin_login">
+            <input class="inputField" type="email" name="userName" placeholder="Username" required>
+            <input class="inputField" type="password" name="thePassword" placeholder="Password" required>
             <input class="submitButton submitButtonLeft" 
                    type="submit" 
                    name="sign-up" 
                    value="Sign-up"
-                   formmethod="post"
+                   onclick="return signup()"
                    formaction="register" >
             <input class="submitButton submitButtonRight"
                    type="submit" 
