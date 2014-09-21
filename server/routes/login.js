@@ -14,14 +14,14 @@ router.post('/register', function (req,res){
 
 	var userDAO = new UserDAO('localhost', 3306);
 
-    userDAO.addUser(b.userName, b.thePassword, function(err){
+    userDAO.addUser(b.userName, b.thePassword, function(err, data){
     	if(err){
     		console.log('Error adding user - responding');
     		res.send(err);
     	}
     	else{
-			req.session.userName = userName;
-			req.session.thePassword = thePassword;
+			req.session.userName = data.userName;
+			req.session.thePassword = data.thePassword;
         	console.log('Added user successfully - responding');
         	res.redirect('/home');
     	}

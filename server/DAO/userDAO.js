@@ -49,8 +49,10 @@ UserDAO.prototype.addUser = function(userName, thePassword, callback) {
                     console.log("Error Adding: " + userName + ' - ' + thePassword);
                     callback(err);
                 } else {
+		    data.userName = userName;
+		    data.thePassword = thePassword;
                     console.log("Added: " + userName + ' - ' + thePassword);
-                    callback(err);
+                    callback(err, data);
                 }
             });
 
