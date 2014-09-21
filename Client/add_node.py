@@ -13,11 +13,10 @@ def authenticate():
     validated = False
     success = False
     while not validated:
-        data["userName"] = str(raw_input("Username: "))
-        data["thePassword"] = getpass.getpass("Password: ")
+        data["userName"] = str(raw_input("\tUsername: "))
+        data["thePassword"] = getpass.getpass("\tPassword: ")
         print "\nAttempting to add device"
         response = requests.post("http://54.86.187.108:3000/addNode", data)
-        print response.text
         if (response.status_code == 200) and ("Success" in response.text):
             validated = True
             success = True
