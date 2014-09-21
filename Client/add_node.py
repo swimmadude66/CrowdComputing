@@ -17,8 +17,8 @@ def authenticate():
         data["thePassword"] = getpass.getpass("Password: ")
         print "\nAttempting to add device"
         response = requests.post("http://54.86.187.108:3000/addNode", data)
-        print response
-        if (response.status_code == 200) and ("granted" in response.text):
+        print response.text
+        if (response.status_code == 200) and ("Success" in response.text):
             validated = True
             success = True
         elif (response.status_code == 200) and ("duplicate" in response.text.lower()):
