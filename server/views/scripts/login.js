@@ -1,4 +1,4 @@
-app.controller('loginController', function ($scope, $http) {
+app.controller('loginController', function ($scope, $http, $location) {
     $scope.submitRegistration = function () {
         'use strict';
         var form;
@@ -12,7 +12,15 @@ app.controller('loginController', function ($scope, $http) {
         if (form[2].value === "") {
             return false;
         } else {
-            $http.post('/register', formData);
+            $http.post('/register', formData)
+                .success(function (data, status) {
+                    debugger;
+                    $location.path('/home');
+                }).
+                .error(function (data, status) {
+                  $scope.data = data || "Request failed";
+                }
+              );
             return true;
         }
     };
