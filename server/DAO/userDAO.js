@@ -144,9 +144,9 @@ this.getConnection(function(err, connection) {
                     console.log("Added new node");
                     callback(null);
                 }
-	    }
+	    });
 	}
-    }	    	
+    });	    	
 };
 
 exports.UserDAO = UserDAO;
