@@ -10,7 +10,7 @@ app.config(function ($routeProvider) {
         //Home after successful login
         .when('/home',
             {
-                controller: '',
+                controller: 'homeController',
                 templateUrl: 'views/home.html'
             })
         .otherwise({ redirectTo: '/index' });

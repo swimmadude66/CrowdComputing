@@ -14,14 +14,18 @@ app.controller('loginController', function ($scope, $http, $location) {
         } else {
             $http.post('/register', formData)
                 .success(function (data, status) {
-                    debugger;
-                    $location.path('/home');
-                    $scope.$apply();
+                    if (data === "True") {
+                        $location.path('/home');
+                        $scope.$apply();
+                    } else {
+                        form[0].setCustomValidity('Email address already registered!');
+                        form[0].checkValidity();
+                        document.getElementById('errMsg').style.visibility = 'visible';
+                    }
                 })
                 .error(function (data, status) {
-                  $scope.data = data || "Request failed";
-                }
-              );
+                    $scope.data = data || "Request failed";
+                });
             return true;
         }
     };
