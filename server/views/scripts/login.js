@@ -65,7 +65,7 @@ app.controller('loginController', function ($scope, $http, $location) {
         formData.userName = form[0].value;
         formData.thePassword = form[1].value;
 
-        $http.post('/register', formData)
+        $http.post('/login', formData)
             .success(function (data, status) {
                 if (data === "True") {
                     $location.path('/home');
