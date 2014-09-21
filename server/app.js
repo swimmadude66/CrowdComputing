@@ -19,9 +19,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'views')));
 
-var timeAndIP = require('./routes/timeAndIP');
-app.use(timeAndIP);
-
 var login = require('./routes/login');
 var createClusterGroup = require('./routes/createClusterGroup');
 var createClusterJob = require('./routes/createClusterJob');
