@@ -33,7 +33,7 @@ router.post('/login', function (req,res){
 
 	var userDAO = new UserDAO('localhost', 3306);
 
-	userDAO.loginUser(b.userName,b.thePassword, function(err){
+	userDAO.loginUser(b.userName,b.thePassword, function(err, status){
 		if(err){
 			console.log('Could not find the user in DB');
 			res.send(err);
@@ -77,19 +77,18 @@ router.post('/addNode', function (req,res){
 	};
 	
 	var userDAO = new UserDAO('localhost', 3306);
-	userDAO.loginUser(b.userName,b.thePassword, function(err){
+	var success;
+	userDAO.loginUser(b.userName,b.thePassword, function(err, status){
                 if(err){
                         console.log('Could not find the user in DB');
-			res.set('error', err);
+			return res.send(err);
                 }
   		else{
-			console.log("User validated, Adding node...");		
+			console.log("User validated, Adding node...");
+			success = status;		
 		}
         });
-	if(res.get('error')){
-		res.send();
-		return;
-	}
+	if(success!= null){
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
 		console.log(err);
@@ -100,7 +99,7 @@ router.post('/addNode', function (req,res){
 		res.send({ Added: "Success" });	
 	    }
 	});
-
+	}
 });
 
 module.exports = router;
