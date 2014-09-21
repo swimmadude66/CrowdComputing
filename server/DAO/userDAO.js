@@ -83,6 +83,7 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
 		console.log(results.length);
                 if(err || results.length===0 ){
                     console.log("Error Finding: " + userName + ' - ' + thePassword);
+		    err = "No such user."
                     callback(err);
                 } else {
                     console.log("Found: " + userName + ' - ' + thePassword);
