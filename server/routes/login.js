@@ -20,8 +20,8 @@ router.post('/register', function (req,res){
     		res.send(err);
     	}
     	else{
-			req.session.userName = data.userName;
-			req.session.thePassword = data.thePassword;
+			req.session.userName = b.userName;
+			req.session.thePassword = b.thePassword;
         	console.log('Added user successfully - responding');
         	res.redirect('/home');
     	}
