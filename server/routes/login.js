@@ -80,16 +80,15 @@ router.post('/addNode', function (req,res){
 	userDAO.loginUser(b.userName,b.thePassword, function(err){
                 if(err){
                         console.log('Could not find the user in DB');
-			res.send(err);
+			res.set(err);
                 }
   		else{
 			console.log("User validated, Adding node...");		
 		}
         });
-	return;
-	if(res.headersSent){
-		console.log("Already sent one error today...");
-		return "ERROR!";
+	if(response.headersSent){
+		res.send();
+		return;
 	}
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
