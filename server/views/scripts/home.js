@@ -23,7 +23,7 @@ app.controller('homeController', function ($scope, $http, $location) {
         var card;
         var body;
     
-        card = document.getElementById("myClusters").children;
+        card = document.getElementById("myClusters");
         body = document.createElement('div');
         if ($scope.groups.length > 0) {
             //make a list
@@ -41,7 +41,7 @@ app.controller('homeController', function ($scope, $http, $location) {
         var card;
         var body;
     
-        card = document.getElementById("myNodes").children;
+        card = document.getElementById("myNodes");
         body = document.createElement('div');
         if ($scope.groups.length > 0) {
             //make a list
