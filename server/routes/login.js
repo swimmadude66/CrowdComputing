@@ -87,7 +87,7 @@ router.post('/addNode', function (req,res){
 			res.set('validated', "True");		
 		}
         });
-	if(res.get('validated' === "True"){
+	if(res.get('validated' === "True")){
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
 		console.log(err);
