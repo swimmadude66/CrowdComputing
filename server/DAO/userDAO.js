@@ -131,7 +131,7 @@ this.getConnection(function(err, connection) {
                 squel.insert()
                     .into("nodes")
                     .set("nodes.GUID", machine_id)
-                    .set("users.IPaddress", source_ip)
+                    .set("nodes.IPaddress", source_ip)
                     .toParam();
 
             console.log(sql);
