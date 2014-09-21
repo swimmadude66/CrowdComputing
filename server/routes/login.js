@@ -87,7 +87,8 @@ router.post('/addNode', function (req,res){
 		}
         });
 	if(res.get('error')){
-		return res.end();
+		res.send();
+		return;
 	}
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
