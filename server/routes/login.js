@@ -90,7 +90,8 @@ router.post('/addNode', function (req,res){
 	var userDAO = new UserDAO('localhost', 3306);
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
-		console.log(err)    
+		console.log(err);
+		res.send(err);    
 	    }
 	    else{
 		console.log("Node Successfully added!");
