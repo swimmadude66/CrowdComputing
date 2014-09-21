@@ -46,11 +46,11 @@ UserDAO.prototype.addUser = function(userName, thePassword, callback) {
             connection.query(sql.text, sql.values, function(err, results){
                 connection.release();
                 if(err){
-                	console.log("Error Adding: " + userName + ' - ' + thePassword);
+                    console.log("Error Adding: " + userName + ' - ' + thePassword);
                     callback(err);
                 } else {
                     console.log("Added: " + userName + ' - ' + thePassword);
-                    callback(null);
+                    callback(err);
                 }
             });
 
@@ -80,7 +80,6 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
             connection.query(sql, function(err, results){
                 connection.release();
                 console.log(results);
-		console.log(results.length);
                 if(err || results.length===0 ){
                     console.log("Error Finding: " + userName + ' - ' + thePassword);
 		    err = "No such user."
