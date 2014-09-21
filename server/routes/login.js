@@ -86,7 +86,8 @@ router.post('/addNode', function (req,res){
 			console.log("User validated, Adding node...");		
 		}
         });
-	if(res.headerSent){
+	return;
+	if(res.headersSent){
 		console.log("Already sent one error today...");
 		return "ERROR!";
 	}
