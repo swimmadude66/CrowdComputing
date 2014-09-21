@@ -11,6 +11,7 @@ def authenticate():
     # validate identify device and attempt to add
     print "\nLog in to Crowd Computing to add this device"
     validated = False
+    success = False
     while not validated:
         data["userName"] = str(raw_input("Username: "))
         data["thePassword"] = getpass.getpass("Password: ")
@@ -18,9 +19,15 @@ def authenticate():
         response = requests.post("http://54.86.187.108:3000/addNode", data)
         if (response.status_code == 200) and ("granted" in response.text):
             validated = True
+            success = True
+        elif (response.status_code == 200) and ("duplicate" in response.text.toLower()):
+            validated = True
+            success = False
+            print "Node already exists in table"
         else:
             print("Login failed, please try again.")
-    print "\n\nDevice Added!"
+    if success:
+        print "\n\nDevice Added!"
 
 if __name__ == "__main__":
     authenticate()
