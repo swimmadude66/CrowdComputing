@@ -1,6 +1,6 @@
 __author__ = 'ayost'
 
-import socket
+from socket import socket
 
 UDP_IP = "128.61.66.25"
 UDP_PORT = 27693
@@ -10,6 +10,5 @@ print "UDP target IP:", UDP_IP
 print "UDP target port:", UDP_PORT
 print "message:", MESSAGE
 
-sock = socket.socket(socket.AF_INET,        # Internet
-                     socket.SOCK_DGRAM)     # UDP
+sock = socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
