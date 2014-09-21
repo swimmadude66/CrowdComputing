@@ -1,10 +1,12 @@
 __author__ = 'ayost'
 
 import socket
+import sys
 
-UDP_IP = "128.61.66.25"
+
+UDP_IP = sys.argv[1]
 UDP_PORT = 27693
-MESSAGE = "incoming_job"
+MESSAGE = sys.argv[2]
 
 print "UDP target IP:", UDP_IP
 print "UDP target port:", UDP_PORT
