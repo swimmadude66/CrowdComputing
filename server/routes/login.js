@@ -84,7 +84,8 @@ router.post('/addNode', function (req,res){
 			console.log("data from /addNode -> login ");
 			console.log(data);
 			if(data.access !== "granted"){
-			    res.send({"access": "denied"});			
+			    res.send(data);
+			    return;			
 			}
 		});
 	var userDAO = new UserDAO('localhost', 3306);
