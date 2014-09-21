@@ -80,7 +80,7 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
             connection.query(sql, function(err, results){
                 connection.release();
                 console.log(results);
-                if(err || results.equals("[]")){
+                if(err || results==="[]"){
                     console.log("Error Finding: " + userName + ' - ' + thePassword);
                     callback(err);
                 } else {
