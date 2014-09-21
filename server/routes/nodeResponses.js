@@ -14,8 +14,8 @@ router.post('/sendNodeProcessResponse', function (req,res){
 router.post('/addNode', function (req,res){
 	b = req.body;
 
-	console.log(b);
-
+	//console.log(b);
+	console.log(b.machine_id);
 	machine_id = b.machine_id;
 
 	var jsonData = {
