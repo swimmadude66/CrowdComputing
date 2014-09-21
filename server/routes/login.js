@@ -71,24 +71,31 @@ router.post('/addNode', function (req,res){
 	console.log(b);
 
 	machine_id = b.machine_id;
-
+	source_ip = req.ip;
 	var jsonData = {
 		userName : b.userName,
 		thePassword : b.thePassword,
-		sourceNode : b.machine_id
+		sourceNode : b.machine_id,
+		ip : req.ip
 	};
 
 	rest.postJson('http://localhost:3000/login',jsonData)
 		.on('complete',function(data,response){
 			console.log("data from /addNode -> login ");
 			console.log(data);
-			if(data.access === "granted"){
-				res.send(data);
-			}
-			else{
-				res.send({"access": "denied"});
+			if(data.access !== "granted"){
+			    res.send({"access": "denied"});			
 			}
 		});
+	var userDAO = new UserDAO('localhost', 3306);
+	userDAO.addNode(machine_id, source_ip, function(err){
+	    if(err){
+		console.log(err)    
+	    }
+	    else{
+		console.log("Node Successfully added!");	
+	    }
+	});
 
 });
 

@@ -121,4 +121,32 @@ UserDAO.prototype.findClusters = function(userName,callback) {
     });
 };
 
+UserDAO.prototype.addNode = function(machine_id, source_ip, callback) {
+this.getConnection(function(err, connection) {
+        if (err) {
+            console.log(err);
+            callback(err);
+        } else {
+            var sql =
+                squel.insert()
+                    .into("nodes")
+                    .set("nodes.GUID", machine_id)
+                    .set("users.IPaddress", source_ip)
+                    .toParam();
+
+            console.log(sql);
+		connection.query(sql.text, sql.values, function(err, results){
+                connection.release();
+                if(err){
+                    console.log("Error Adding node");
+                    callback(err);
+                } else {
+                    console.log("Added new node");
+                    callback(null);
+                }
+	    }
+	}
+    }	    	
+};
+
 exports.UserDAO = UserDAO;
