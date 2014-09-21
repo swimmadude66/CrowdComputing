@@ -10,7 +10,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)     # UDP
 sock.bind((UDP_IP, UDP_PORT))
 
 while True:
-    data = sock.recvfrom(256)
+    data = sock.recvfrom(128)
     if "status_check" in data:
         print "Sending status update"
         system("python status_update.py")

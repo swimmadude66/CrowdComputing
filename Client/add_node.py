@@ -4,7 +4,7 @@ import getpass
 import requests
 
 
-def authenticate():
+def addDevice():
     # identify device
     data = dict()
     data["machine_id"] = open("/etc/machine-id", 'r').read().strip()
@@ -32,5 +32,5 @@ def authenticate():
         print "\n\nDevice Added!"
 
 if __name__ == "__main__":
-    authenticate()
+    addDevice()
 
