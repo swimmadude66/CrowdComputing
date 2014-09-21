@@ -8,7 +8,7 @@ UserDAO = function(host, port) {
         host     : host,
         user     : 'root',
         password : 'admin',
-        database : 'CrowdComputing',
+        database : 'crowdcomputing',
         port: port,
         typeCast: function (field, next){
             // handle all BIT(1) fields as 0 or 1
@@ -90,14 +90,14 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
                 } else {
                     console.log("Found: " + userName + ' - ' + thePassword);
                     callback(null);
-                    //this.findClusters(callback);
+                    this.findClusters(callback);
                 }
             });
         }
     });
 };
 
-UserDAO.prototype.findClusters = function(callback) {
+UserDAO.prototype.findClusters = function(userName,callback) {
 
     this.getConnection(function(err, connection) {
         if (err) {
@@ -118,7 +118,7 @@ UserDAO.prototype.findClusters = function(callback) {
                     callback(err);
                 } else {
                     console.log("Found Clusters for: " + userName);
-                    this.findClusters();
+                    callback(results,null);
                 }
             });
         }

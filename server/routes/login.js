@@ -30,14 +30,15 @@ router.post('/login', function (req,res){
 
 	var userDAO = new UserDAO('localhost', 3306);
 
-	userDAO.loginUser(b.userName,b.thePassword, function(err){
+	userDAO.loginUser(b.userName,b.thePassword, function(results,err){
+		console(results);
 		if(err){
 			console.log('Could not find the user in DB');
 			res.send(err);
 		}
 		else{
 			console.log('Successfully found user - logging in');
-			res.render('userPage.html',{});
+			res.render('userPage.html',{data: results});
 		}
 	});
 
