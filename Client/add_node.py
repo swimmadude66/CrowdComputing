@@ -21,7 +21,7 @@ def authenticate():
         if (response.status_code == 200) and ("granted" in response.text):
             validated = True
             success = True
-        elif (response.status_code == 200) and ("duplicate" in str(response.text).lower()):
+        elif (response.status_code == 200) and ("duplicate" in response.text.lower()):
             validated = True
             success = False
             print "Node already exists in table"

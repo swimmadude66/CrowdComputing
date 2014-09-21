@@ -93,7 +93,7 @@ router.post('/addNode', function (req,res){
 	    }
 	    else{
 		console.log("Node Successfully added!");
-		res.send({ Added: "True" });	
+		res.send({ Added: "Success" });	
 	    }
 	});
 
