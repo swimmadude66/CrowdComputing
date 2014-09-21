@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26cc2e5b-2596-4845-9fd8-45466cb639ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/add_node.py" afterPath="$PROJECT_DIR$/Client/add_node.py" />
-    </list>
+    <list default="true" id="26cc2e5b-2596-4845-9fd8-45466cb639ae" name="Default" comment="" />
     <ignored path="CrowdComputing.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
