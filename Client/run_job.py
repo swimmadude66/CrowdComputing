@@ -7,6 +7,7 @@ TCP_IP = ""
 TCP_PORT = 2667
 
 
+
 def get_job():
     # create TCP connection to server to get job
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -15,7 +16,10 @@ def get_job():
     conn, addr = s.accept()
     data = conn.recv(268435456)
     # run reduce job on supplied data
-    reducer = data.split(":")[0]
+    parts = data.split("\001")
+    block_id = int(parts[0])
+    reducer = parts[1]
+    source_data = parts[2]
     fout = open("./incoming/reducer.py", 'w')
     fout.write(reducer)
     fout.close()
