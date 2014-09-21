@@ -62,8 +62,8 @@
       <file leaf-file-name="add_node.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/add_node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24242425" vertical-offset="114" max-vertical-offset="600">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.28030303" vertical-offset="159" max-vertical-offset="630">
+              <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
               <folding>
                 <element signature="e#22#36#0" expanded="true" />
               </folding>
@@ -411,8 +411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/add_node.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24242425" vertical-offset="114" max-vertical-offset="600">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.28030303" vertical-offset="159" max-vertical-offset="630">
+          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
           <folding>
             <element signature="e#22#36#0" expanded="true" />
           </folding>

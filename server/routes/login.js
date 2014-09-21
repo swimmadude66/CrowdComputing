@@ -81,7 +81,7 @@ router.post('/addNode', function (req,res){
                 if(err){
                         console.log('Could not find the user in DB');
                         res.send(err);
-			callback(err);
+			return err;
                 }
   		else{
 			console.log("User validated, Adding node...");		
