@@ -42,7 +42,7 @@ UserDAO.prototype.addUser = function(userName, thePassword, callback) {
         } else {
             var sql =
                 squel.insert()
-                    .into("userinfo")
+                    .into("users")
                     .set("userName", userName)
                     .set("thePassword", thePassword)
                     .toParam();
@@ -72,11 +72,11 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
         } else {
             var sql =
                 squel.select()
-                    .from("userinfo")
-                    .field("userinfo.userName")
-                    .field("userinfo.thePassword")
-                    .where("userinfo.userName = \"" + userName + "\"")
-                    .where("userinfo.thePassword = \"" + thePassword + "\"")
+                    .from("users")
+                    .field("users.userName")
+                    .field("users.thePassword")
+                    .where("users.userName = \"" + userName + "\"")
+                    .where("users.thePassword = \"" + thePassword + "\"")
                     .toString();
 
             console.log(sql);
@@ -108,7 +108,7 @@ UserDAO.prototype.findClusters = function(callback) {
                 squel.select('*')
                     .from("clusters")
                     .join("user_clusters", "clusters", "clusters.clusterId = user_clusters.clusterId")
-                    .where("userinfo.userName = " + userName)
+                    .where("users.userName = " + userName)
                     .toString();
 
             connection.query(sql.text, function(err, results){

@@ -9,17 +9,18 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-// app.set('views', path.join(__dirname, 'views'));
+app.set('view engine','html');
+app.engine('html', require('ejs').renderFile);
 app.use(methodOverride());
 app.use(session({ resave: true,
                   saveUninitialized: true,
                   secret: 'uwotm8' }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'views')));
+
 var timeAndIP = require('./routes/timeAndIP');
 app.use(timeAndIP);
-app.engine('html', require('ejs').renderFile);
-app.use(express.static(path.join(__dirname, 'public')));
 
 var login = require('./routes/login');
 var createClusterGroup = require('./routes/createClusterGroup');
@@ -29,8 +30,6 @@ app.use(login);
 app.use(createClusterGroup);
 app.use(createClusterJob);
 app.use(nodeResponses);
-
-
 
 app.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

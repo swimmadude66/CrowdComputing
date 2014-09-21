@@ -358,3 +358,597 @@ Sat Sep 20 2014 17:31:20 GMT-0400 (Eastern Daylight Time)
 IP Address: 
 127.0.0.1
 Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 17:42:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 17:42:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 17:42:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingSVG.png
+--------------------
+Time: 
+Sat Sep 20 2014 17:42:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingIcon.png
+--------------------
+Time: 
+Sat Sep 20 2014 17:42:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 17:46:28 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 17:46:28 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /login
+--------------------
+Time: 
+Sat Sep 20 2014 17:46:28 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 17:46:28 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:30:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:31:27 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:34:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:35:17 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:35:42 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:37:38 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:39:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:58:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 18:58:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 18:58:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 18:58:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:00:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:00:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:00:27 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:03:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:03:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:03:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 19:03:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 19:05:08 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 19:05:53 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 19:06:18 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:06:18 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 19:15:20 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /register
+--------------------
+Time: 
+Sat Sep 20 2014 19:15:20 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /register
+--------------------
+Time: 
+Sat Sep 20 2014 19:54:12 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:54:12 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 19:54:12 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingSVG.png
+--------------------
+Time: 
+Sat Sep 20 2014 19:54:12 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingIcon.png
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:17 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:17 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:49 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:49 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:49 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:55:49 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingSVG.png
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingSVG.png
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /index.css
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:15 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /crowdComputingSVG.png
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:40 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:40 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:40 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 19:56:40 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:01:31 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:01:31 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:01:48 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:01:48 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:01:48 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:02:21 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:02:46 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:03:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:03:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:03:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:01 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:01 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:01 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:04:36 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:05:41 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:05:54 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:05:56 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:06:12 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:06:22 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:06:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:07:00 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:08:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:08:37 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:08:58 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:08:58 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:02 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: GET /
+--------------------
+Time: 
+Sat Sep 20 2014 20:10:52 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:11:22 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:11:22 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:12:07 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:12:47 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:13:32 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:13:42 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:14:03 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:14:18 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login
+--------------------
+Time: 
+Sat Sep 20 2014 20:16:38 GMT-0400 (Eastern Daylight Time)
+IP Address: 
+127.0.0.1
+Request URL: POST /login

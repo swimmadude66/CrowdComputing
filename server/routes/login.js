@@ -5,14 +5,7 @@ var UserDAO = require('../DAO/userDAO').UserDAO;
 
 // define the home page route
 router.get('/', function (req, res) {
-	res.render('index.html',{requestIP: req.ip},function (err,html){
-		//...
-	});
-});
-
-router.get('/test', function (req,res) {
-	console.log('Loaded the test page');
-	res.status(200).end();
+	res.render('index.html',{requestIP: req.ip});
 });
 
 router.post('/register', function (req,res){
@@ -44,9 +37,7 @@ router.post('/login', function (req,res){
 		}
 		else{
 			console.log('Successfully found user - logging in');
-			res.render('userPage.html',{}, function (err, html){
-				//...
-			});
+			res.render('userPage.html',{});
 		}
 	});
 
