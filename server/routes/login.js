@@ -42,6 +42,7 @@ router.post('/login', function (req,res){
 			req.session.userName = b.userName;
 			req.session.thePassword = b.thePassword;
 			console.log('Successfully found user - logging in');
+			res.send("True")
 		}
 	});
 
