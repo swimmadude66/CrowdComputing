@@ -16,7 +16,7 @@ app.controller('loginController', function ($scope, $http, $location) {
                 .success(function (data, status) {
                     debugger;
                     $location.path('/home');
-                }).
+                })
                 .error(function (data, status) {
                   $scope.data = data || "Request failed";
                 }
