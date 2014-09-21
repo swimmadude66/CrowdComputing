@@ -86,7 +86,7 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
                     callback(err);
                 } else {
                     console.log("Found: " + userName + ' - ' + thePassword);
-                   callback(null);
+                   callback(err, results);
                 }
             });
         }
