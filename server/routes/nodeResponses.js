@@ -11,21 +11,25 @@ router.post('/sendNodeProcessResponse', function (req,res){
 
 });
 
-router.post('/addNode', function(req,res){
+router.post('/addNode', function (req,res){
 	b = req.body;
+
+	console.log(b);
 
 	machine_id = b.machine_id;
 
 	var jsonData = {
 		userName : b.userName,
 		thePassword : b.thePassword,
-		source : b.machine_id
+		sourceNode : b.machine_id
 	};
 
-	rest.postJson('http://www.crowdcomp.me/login',jsonData)
-		.on('complete',function(data,response){
-			console.log("data from /addNode -> login " + data);
-		});
+	res.send(b);
+
+	// rest.postJson('http://www.crowdcomp.me/login',jsonData)
+	// 	.on('complete',function(data,response){
+	// 		console.log("data from /addNode -> login " + data);
+	// 	});
 
 });
 

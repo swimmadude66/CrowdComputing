@@ -1,4 +1,5 @@
 var express = require('express');
+var rest = require('restler');
 var router = express.Router();
 
 var UserDAO = require('../DAO/userDAO').UserDAO;
@@ -41,7 +42,7 @@ router.post('/login', function (req,res){
 			req.session.userName = b.userName;
 			req.session.thePassword = b.thePassword;
 			console.log('Successfully found user - logging in');
-			if(b.source === null){
+			if(b.sourceNode === null){
 				res.redirect('/home');
 			}
 			else{
@@ -61,6 +62,33 @@ router.get('/home', function(req,res){
 router.get('/getClusters', function(req,res){
 	userName = req.param.userName;
 
+
+});
+
+router.post('/addNode', function (req,res){
+	b = req.body;
+
+	console.log(b);
+
+	machine_id = b.machine_id;
+
+	var jsonData = {
+		userName : b.userName,
+		thePassword : b.thePassword,
+		sourceNode : b.machine_id
+	};
+
+	rest.postJson('http://localhost:3000/login',jsonData)
+		.on('complete',function(data,response){
+			console.log("data from /addNode -> login ");
+			console.log(data);
+			if(data.access === "granted"){
+				res.send(data);
+			}
+			else{
+				res.send({"access": "denied"});
+			}
+		});
 
 });
 
