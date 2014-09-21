@@ -2,14 +2,11 @@
     <input class="inputField" type="email" name="userName" placeholder="Username" required>
     <input class="inputField" type="password" name="thePassword" placeholder="Password" required>
     <button class="submitButton submitButtonLeft" 
-           name="sign-up"
-           ng-click="signup()">Sign-up</button>
-    <input class="submitButton submitButtonRight"
-           type="submit" 
-           name="login" 
-           value="Log in" 
-           formmethod="post"
-           formaction="login" >
+            name="sign-up"
+            ng-click="signup()">Sign-up</button>
+    <button class="submitButton submitButtonRight"
+            name="login" 
+            ng-click="login()">Log in</button>
 </div>
 <div id="errMsg" class="errMsg">
     Email address already registered!

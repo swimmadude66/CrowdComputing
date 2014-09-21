@@ -53,6 +53,35 @@ app.controller('loginController', function ($scope, $http, $location) {
             $scope.submitRegistration();
         }
     };
+
+
+    $scope.login = function () {
+        'use strict';
+        var form;
+        var formData;
+
+        form = document.getElementById("signin_loginForm").children;
+        formData = {};
+        formData.userName = form[0].value;
+        formData.thePassword = form[1].value;
+
+        $http.post('/register', formData)
+            .success(function (data, status) {
+                if (data === "True") {
+                    $location.path('/home');
+                    $scope.$apply();
+                } else {
+                    form[0].setCustomValidity('Username/password is incorrect');
+                    form[0].checkValidity();
+                    document.getElementById('errMsg').style.visibility = 'visible';
+                }
+            })
+            .error(function (data, status) {
+                $scope.data = data || "Request failed";
+            });
+        return true;
+    };
+               
 });
 
 //add a change function to first password field
