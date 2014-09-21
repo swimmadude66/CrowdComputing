@@ -45,9 +45,6 @@ router.post('/login', function (req,res){
 			if(b.sourceNode === null){
 				res.redirect('/home');
 			}
-			else{
-				res.send({access : 'granted'});
-			}
 		}
 	});
 
@@ -67,28 +64,28 @@ router.get('/getClusters', function(req,res){
 
 router.post('/addNode', function (req,res){
 	b = req.body;
-
 	console.log(b);
 
 	machine_id = b.machine_id;
 	source_ip = req.ip;
+
 	var jsonData = {
 		userName : b.userName,
 		thePassword : b.thePassword,
 		sourceNode : b.machine_id,
 		ip : req.ip
 	};
-
-	rest.postJson('http://localhost:3000/login',jsonData)
-		.on('complete',function(data,response){
-			console.log("data from /addNode -> login ");
-			console.log(data);
-			if(data.access !== "granted"){
-			    res.send(data);
-			    return;			
-			}
-		});
+	
 	var userDAO = new UserDAO('localhost', 3306);
+	userDAO.loginUser(b.userName,b.thePassword, function(err){
+                if(err){
+                        console.log('Could not find the user in DB');
+                        res.send(err);
+                }
+  		else{
+			console.log("User validated, Adding node...");		
+		}
+        });
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
 		console.log(err);
@@ -96,7 +93,7 @@ router.post('/addNode', function (req,res){
 	    }
 	    else{
 		console.log("Node Successfully added!");
-		res.send(data);	
+		res.send({ Added: "True" });	
 	    }
 	});
 
