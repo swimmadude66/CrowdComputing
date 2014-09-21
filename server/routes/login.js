@@ -86,14 +86,14 @@ router.post('/addNode', function (req,res){
 			console.log("User validated, Adding node...");		
 		}
         });
-	if(res.headersSent){
+	if(res.headerSent){
+		console.log("Already sent one error today...");
 		return "ERROR!";
 	}
 	userDAO.addNode(machine_id, source_ip, function(err){
 	    if(err){
 		console.log(err);
 		res.send(err);
-		return;
 	    }
 	    else{
 		console.log("Node Successfully added!");
