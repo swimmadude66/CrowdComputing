@@ -19,8 +19,10 @@ router.post('/register', function (req,res){
     		res.send(err);
     	}
     	else{
+			req.session.userName = userName;
+			req.session.thePassword = thePassword;
         	console.log('Added user successfully - responding');
-        	res.send(true);
+        	res.redirect('/home');
     	}
     });
 });
@@ -30,17 +32,35 @@ router.post('/login', function (req,res){
 
 	var userDAO = new UserDAO('localhost', 3306);
 
-	userDAO.loginUser(b.userName,b.thePassword, function(results,err){
-		console(results);
+	userDAO.loginUser(b.userName,b.thePassword, function(err){
 		if(err){
 			console.log('Could not find the user in DB');
 			res.send(err);
 		}
 		else{
+			req.session.userName = b.userName;
+			req.session.thePassword = b.thePassword;
 			console.log('Successfully found user - logging in');
-			res.render('userPage.html',{data: results});
+			if(b.source === null){
+				res.redirect('/home');
+			}
+			else{
+				res.send({access : 'granted'});
+			}
 		}
 	});
+
+});
+
+router.get('/home', function(req,res){
+	// add bunch of rest calls here to get the data for groups/clusters/nodes
+	console.log(req.session.userName);
+	res.render('userPage.html');
+});
+
+router.get('/getClusters', function(req,res){
+	userName = req.param.userName;
+
 
 });
 

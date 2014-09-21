@@ -21,10 +21,6 @@ UserDAO = function(host, port) {
             return next();
         }
     });
-
-    this.userName = "";
-    this.thePassword = "";
-    this.clusterGroup = [];
 };
 
 UserDAO.prototype.getConnection = function(callback) {
@@ -88,9 +84,9 @@ UserDAO.prototype.loginUser = function(userName, thePassword, callback) {
                     console.log("Error Finding: " + userName + ' - ' + thePassword);
                     callback(err);
                 } else {
+
                     console.log("Found: " + userName + ' - ' + thePassword);
-                    callback(null);
-                    this.findClusters(callback);
+                   callback(null);
                 }
             });
         }
@@ -107,8 +103,8 @@ UserDAO.prototype.findClusters = function(userName,callback) {
             var sql =
                 squel.select('*')
                     .from("clusters")
-                    .join("user_clusters", "clusters", "clusters.clusterId = user_clusters.clusterId")
-                    .where("users.userName = " + userName)
+                    .join("user_cluster", "clusters", "clusters.cluster_id = user_cluster.cluster_id")
+                    .where("users.userName = \"" + userName + "\"")
                     .toString();
 
             connection.query(sql.text, function(err, results){
@@ -118,7 +114,7 @@ UserDAO.prototype.findClusters = function(userName,callback) {
                     callback(err);
                 } else {
                     console.log("Found Clusters for: " + userName);
-                    callback(results,null);
+                    callback(null);
                 }
             });
         }
